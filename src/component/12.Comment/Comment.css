@@ -1,0 +1,100 @@
+.review-wrapper {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  background: #f7f7f7;
+}
+
+/* LEFT SIDE */
+.review-left {
+  flex: 2;
+}
+
+.review-left h2 {
+  margin-bottom: 20px;
+}
+
+.review-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.review-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #ff5a5f;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.stars-display {
+  margin: 10px 0;
+  color: gold;
+}
+
+/* RIGHT SIDE */
+.review-right {
+  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  height: fit-content;
+}
+
+.review-right h2 {
+  margin-bottom: 15px;
+}
+
+.review-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review-right input,
+.review-right textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.review-right textarea {
+  min-height: 100px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+}
+
+.review-right button {
+  background: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.review-right button:hover {
+  background: #e14b50;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}

@@ -1,0 +1,95 @@
+/* wrapper */
+.slider-wrapper {
+  overflow: hidden;
+}
+
+/* track */
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease;
+  gap: 25px;
+  padding-bottom: 60px;
+}
+
+/* الكرت (🔥 هنا السر) */
+.trip-card {
+  flex: 0 0 calc(33.33% - 17px); /* نفس grid */
+  background: white;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* الصورة */
+.image-box {
+  height: 200px;
+  margin: 15px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+/* النص */
+.trip-content {
+  padding: 15px;
+}
+
+.trip-content h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.trip-content p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* الأسهم */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }
+
+.trips-section {
+  position: relative;
+}
+
+.trip-card {
+  flex: 0 0 calc(33.33% - 17px);
+  background: white;
+  border-radius: 7px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* hover للكرت */
+.trip-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.image-box img {
+  transition: transform 0.5s ease;
+}
+
+/* zoom للصورة */
+.trip-card:hover .image-box img {
+  transform: scale(1.1);
+}

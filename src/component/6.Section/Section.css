@@ -1,0 +1,15 @@
+.section{
+    margin: auto 70px;
+}
+
+@media (max-width: 768px) {
+    .section{
+        margin: auto 30px;
+        font-size: 30px;
+    }
+  
+    p{
+      font-size: 14px;
+    }
+  }
+  

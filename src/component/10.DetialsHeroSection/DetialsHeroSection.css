@@ -1,0 +1,90 @@
+.hero-details {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 0 15px;
+
+  /* IMAGE */
+  .hero-img {
+    position: relative;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+  }
+
+  /* زر المفضلة */
+  .fav-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  .fav-btn.active {
+    background: #ffe5e5;
+    transform: scale(1.1);
+  }
+
+  /* زر الصور */
+  .photos-btn {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+  }
+
+  /* RIGHT */
+  .hero-info {
+    position: relative; /* 🔥 مهم جدًا */
+    background: white;
+    padding: 25px;
+
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+  }
+
+  .desc {
+    color: #666;
+    margin: 10px 0 20px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    padding: 12px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+}
+
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img img {
+    height: 250px;
+  }
+}

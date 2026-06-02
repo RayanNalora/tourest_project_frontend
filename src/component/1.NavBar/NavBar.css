@@ -1,0 +1,107 @@
+/* الحاوية */
+.header-wrapper {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* الهيدر */
+  .header {
+    width: 95%;
+    max-width: 100%;
+    background: white;
+    border-radius: 15px;
+    padding: 12px 25px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    box-shadow: 0 12px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+  }
+  
+  /* اللوجو */
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  /* القائمة */
+  .nav{
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #000;
+  }
+
+  .left-section{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  /* زر التسجيل */
+  .signup {
+    padding: 7px 16px;
+    border-radius: 8px;
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  /* زر الموبايل */
+  .menu-toggle {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 768px) {
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .signup {
+      display: none;
+    }
+  
+    .nav {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: white;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 0;
+  
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  
+      display: none;
+    }
+  
+    .nav.open {
+      display: flex;
+    }
+  }
+  
+  .nav a.active {
+    color: red;
+  }

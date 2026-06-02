@@ -1,0 +1,12 @@
+  /* الزر */
+  .hero-content button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
