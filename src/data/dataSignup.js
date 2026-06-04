@@ -1,11 +1,11 @@
-export const datafrom = {
+export const dataSignup = {
     title: "Create an account",
     buttonText: "Register",
 
     fields: [
-      { type: "text", placeholder: "Your Name" },
-      { type: "email", placeholder: "Your Email" },
-      { type: "text", placeholder: "Password" },
-      { type: "text", placeholder: "Repeat your password" }
+      {name:"name" , type: "text", placeholder: "Your Name" },
+      {name:"email" , type: "email", placeholder: "Your Email" },
+      {name:"password" , type: "text", placeholder: "Password" },
+      {name:"repeatpassword" , type: "text", placeholder: "Repeat your password" }
     ]
 }

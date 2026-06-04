@@ -48,3 +48,23 @@
     cursor: pointer;
   }
   
+  .success-message {
+    width: fit-content;
+    margin: 15px auto;
+    padding: 12px 20px;
+    background-color: #e8f9f1;
+    color: #198754;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+  
+  .error-message {
+    width: fit-content;
+    margin: 15px auto;
+    padding: 12px 20px;
+    background-color: #fdecec;
+    color: #dc3545;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+  

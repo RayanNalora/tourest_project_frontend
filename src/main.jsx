@@ -11,6 +11,7 @@ import AboutPage from './pages/2.AboutPage'
 import ContactPage from './pages/4.ContactPage'
 import SignUpPage from './pages/5.SignUpPage'
 import TripDetails from './pages/6.TripDetails'
+import LoginPage from './pages/7.LoginPage'
 
 
 const routes = createBrowserRouter([
@@ -37,6 +38,10 @@ const routes = createBrowserRouter([
       {
         path:'/signup' ,
         element:<SignUpPage/>
+      },
+      {
+        path:'/login' ,
+        element:<LoginPage/>
       },
       {
         path:'/tripdetails/:id' ,

@@ -9,7 +9,6 @@ import Hero from "../component/2.Hero/Hero";
 const TripDetails = () => {
   const { id } = useParams();
   const [trip, setTrip] = useState(null);
-  
   useEffect(() => {
     fetch(`http://localhost:5000/trips/${id}`)
       .then(res => {

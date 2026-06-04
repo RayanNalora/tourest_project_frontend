@@ -3,9 +3,9 @@ export const formData = {
     buttonText: "Send Message",
 
     fields: [
-      { type: "text", placeholder: "Name" },
-      { type: "email", placeholder: "Email" },
-      { type: "text", placeholder: "Subject" },
-      { type: "textarea", placeholder: "Message" }
+      {name:"Name" , type: "text", placeholder: "Name" },
+      {name:"Email" , type: "email", placeholder: "Email" },
+      {name:"Subject" , type: "text", placeholder: "Subject" },
+      {name:"Message" , type: "textarea", placeholder: "Message" }
     ]
   };

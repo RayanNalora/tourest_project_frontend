@@ -11,7 +11,8 @@ const Auth = () => {
         <NavBar
         logo="Trippy"
         items={navItems}
-        btn="Sign Up"
+        btn1="Sign Up"
+        btn2="Login"
         />
         <Outlet/>
         {console.log(footer.links)}

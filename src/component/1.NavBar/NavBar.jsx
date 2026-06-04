@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../1.NavBar/NavBar.css'
 import { Link, useNavigate } from 'react-router-dom';
 
-const NavBar = ({logo , items , btn}) => {
+const NavBar = ({logo , items , btn1 ,btn2}) => {
     {/* menu open/close */}
     const [menuOpen, setMenuOpen] = useState(false);
     const navigate = useNavigate()
@@ -20,7 +20,8 @@ const NavBar = ({logo , items , btn}) => {
                         )
                     })}
                 </nav>
-                <button><Link to="signup" >{btn}</Link></button>
+                <button><Link to="signup" >{btn1}</Link></button>
+                <button><Link to="login" >{btn2}</Link></button>
             </div>
             {/* Menu Icon */}
             <button

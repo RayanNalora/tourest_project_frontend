@@ -1,0 +1,11 @@
+.section_top_bottom{
+    margin: 100px auto 70px;
+}
+
+@media (max-width: 768px) {
+    .section_top_bottom{
+        margin: 30px auto;
+        font-size: 30px;
+    }
+  }
+  
